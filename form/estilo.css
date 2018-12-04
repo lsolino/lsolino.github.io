@@ -1,5 +1,5 @@
 body{
-	background-color: #00b8ff;
+	background-color: #BABABA;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 14px;
 }
@@ -8,4 +8,12 @@ h5{
 }
 legend{
 	color: #01f5a2;
+}
+
+h1 strong {
+	color: blue;
+}
+
+p strong {
+	color: green;
 }
