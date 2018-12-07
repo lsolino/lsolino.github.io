@@ -1,0 +1,27 @@
+*{
+	margin: 1;
+	padding: 0; 
+}
+ul{
+	list-style: none;
+	width: 240px;
+}
+
+
+ul li a{
+	display: block;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	font-size: 25px;
+	font-family: 'Arial', sans-serif;
+	padding: 25px;
+	background-color: #f8f8f8;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+}
+
+ul li a:hover{
+   font-weight: bold;
+   background:#ccc;
+}
