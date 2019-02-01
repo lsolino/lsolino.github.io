@@ -1,0 +1,435 @@
+* {
+  box-sizing: border-box; 
+}
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  width:95%;
+  margin-left:2%;
+  }
+
+#pageHeader {
+  grid-area: header;
+  height: 250%;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article; 
+  margin-top: 17.3%;
+  width: 80%;  
+  margin-left: 5%;  
+  }
+#mainNav { 
+  grid-area: nav;
+  margin-top: 55%;
+  width: 110%;
+  padding: 7%;
+  }
+#siteAds { 
+  grid-area: ads;
+  margin-top: 30%;
+  margin-left: -55%;
+  } 
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+header img{
+  float: left;
+  margin-top: 0.5%;
+  width: 15%;
+  margin-left: 3.5%;
+}
+.navegacao{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: grid;
+  float: right;
+}
+.navbar{
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+.navsearch{
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+.subnav{
+  margin-top: 20px;
+  float: right;
+  width: auto;
+  text-align: right;
+}
+
+.barrinha{
+  margin-left: 10px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.navbar ul{
+  padding: 0;
+  width: auto;
+  display: block;
+}
+
+header .navbar ul li{
+  display: inline-block;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+header .navbar a, .navsearch a, .rodape_mapa a{
+  color: black;
+  text-decoration-color: black;
+  text-decoration: underline;
+  vertical-align: super;
+}
+
+header .navbar ul li .edita_a{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+header .navbar ul li .edita_A{
+  padding: 2px;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+}
+
+.navsearch button, input{
+  padding: 2px 6px 2px 6px;
+}
+
+#botao{
+  margin-right: 25px;
+}
+
+.subnav ul li, .conteudo_esq ul a{
+  display: inline-block;
+  list-style: none;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  padding: 1px 0px 4px 0px;
+  border: 2px black solid;
+  width: 215px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.subnav ul, .conteudo_esq ul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.conteudo_esqpt2{
+  width: 246px;
+  padding: 2%;
+  margin-top: -9%;
+}
+
+.conteudo_esq img{
+  width: 100%;
+  height: 10em;
+}
+
+.conteudo_esq ul, .conteudo_esqpt3{
+  margin-top: 20%;
+}
+
+.conteudo_esq ul li{
+	display: block;
+}
+
+.conteudo_esq ul a{
+  display: block;
+  padding: 1px 0px 4px 5px;
+  width: 96%;
+  text-align: left;
+  font-size: 1em;
+}
+
+.conteudo_esqpt3{
+  width: 110%;
+}
+
+.conteudo_esqpt3 h2{
+  margin: auto 0px 0px 5px;
+}
+
+.conteudo_esqpt3 ul{
+  display: block;
+  margin-top: 3px;
+  padding: 5px 10px 5px 10px;
+  border: 3px solid black;
+  background-color: rgb(240,240,240);
+  width: 90%;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.conteudo_esqpt3 ul a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+}
+
+.slide_button{
+  width: 24px;
+}
+
+.column{
+  width: 600px;
+}
+
+.conteudo_meio, .conteudo_meiopt2, .conteudo_meiopt3{
+  padding: 1px 20px 20px 20px;
+  margin-bottom: 30px;
+  background-color: #dadada;
+}
+
+.titulo a, .titulo img{
+  float: right;
+}
+
+.titulo a{
+  margin-left: 10px;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.manchete{
+  margin: auto;
+  height: 140px;
+  display: block;
+}
+
+.manchete a{
+  font-size: 1em;
+}
+
+.texto a{
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.texto .imagem{
+  margin: 0 20px 0 10px;
+  float: left;
+  width: 120px;
+}
+
+.texto p{
+  margin: 0px;
+  padding: 0px;
+  width: 85%;
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.div_data{
+	width: 30%;
+}
+
+.data{
+  margin-right: 15px;
+  display: block;
+  width: auto;
+  height: 95px;
+  float: left;
+  text-align: right;
+}
+
+.conteudo_meiopt2 .texto p{
+  display: inline-block;
+}
+
+.texto .botao_lat{
+  display: block;
+  width: auto;
+  float: right;
+}
+
+.column2{
+  width: 286px;
+}
+
+.conteudo_dir, .conteudo_dirpt2, .conteudo_dirpt3{
+  margin-bottom: 30px;
+}
+
+.conteudo_dir{
+  width: 100%;
+  margin-top: 10%;
+  position: relative;
+  display: block;
+}
+
+.conteudo_dir a, .conteudo_dir img{
+  display: block;
+  width: 100%;
+  height: 20em;
+  margin-top: 20%;
+}
+
+.conteudo_dir .texto{
+  display: block;
+  position: relative;
+  margin-right: 2%;
+  float: right;
+  width: 95%;
+  height: 18em;
+}
+
+.conteudo_dir h2, .conteudo_dir p{
+  margin: 8px;
+  width: auto;
+  text-align: justify;
+}
+
+.conteudo_dirpt2, .conteudo_dirpt3{
+  display: inline-block;
+  position: relative;
+  margin-top: 7%;
+  width: 100%;
+  background-color: #dadada;
+}
+
+.conteudo_dirpt2_especial{
+  display: inline-block;
+  position: relative;
+  margin-top: 30%;
+  width: 100%;
+  background-color: #dadada;
+}
+
+.conteudo_dirpt2_especial img{
+  position: relative;
+  float: left;
+  padding: 2% 2% 2% 2%;
+  display: inline-block;  
+  width: 32%;
+}
+
+.conteudo_dirpt2_especial h2{
+  margin: 7% 3% 0% 0%;
+  float: right;
+  width: 55%;
+  font-size: 1.41em;
+  text-align: justify;
+}
+
+.conteudo_dirpt2 img, .conteudo_dirpt3 img{
+  position: relative;
+  float: left;
+  padding: 2% 2% 2% 2%;
+  display: inline-block;
+  width: 35%;
+}
+
+.conteudo_dirpt2 h2, .conteudo_dirpt3 h2{
+  margin: 7% 3% 0% 0%;
+  float: right;
+
+  width: 55%;
+  font-size: 1.41em;
+  text-align: justify;
+}
+
+hr{
+  display: block;
+  border: 1px solid black;
+  width: 100%;
+}
+
+footer{
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.rodape_mapa ul li{
+  margin-right: 7px;
+  display: inline-block;
+}
+
+.rodape_mapa, .rodape_mapa ul{
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.rodape_inicio{
+  margin-left: 41.5%;
+  position: absolute;
+}
+.rodape_inicio{
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+.rodape_inicio a{
+  display: block;
+  margin-left: 25%;
+  padding: 0px 1% 0px 1%;
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 20%;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3em;
+}
+
+.rodape_direitos, .rodape_direitos p{
+  margin-bottom: 0;
+  padding: 0;
+  float: right;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
