@@ -24,4 +24,5 @@ var dia,
 dia = prompt('Digite o dia de seu nascimento: ');
 mes = prompt('Digite o mes de seu nascimento: ');
 ano = prompt('Digite o ano de seu nascimento: ');
-alert(idade(dia, mes, ano));
+
+alert("Idade: " + idade(dia, mes, ano) + " anos");
