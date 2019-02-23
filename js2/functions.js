@@ -25,7 +25,7 @@ function parimpar(b) {
 }
 
 function validaEmail(str) {
-  var valida = new RegExp(/^\w*(\.\w*)?@\w*\.[a-z]+(\.[a-z]+)?$/);
+  var valida = new RegExp(/^\w*(\.\w*)?@[a-z].[a-z]+(\.[a-z]+)?$/);
   
   if (valida.test(str)) {
     return 1;
