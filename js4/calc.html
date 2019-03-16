@@ -14,14 +14,15 @@
 
     function operacao () {
 
-      var tela = document.getElementById('tela');
+      var tela = document.getElementById('calc-output');
       tela.textContent = '0';
 
     }
 
     function igual () {
-      var op = tela.textContent;
-      tela.textContent = eval(op);
+    	var tela = document.getElementById('calc-output');
+      	var op = tela.textContent;
+      	tela.textContent = eval(op);
     }
     
   </script>
