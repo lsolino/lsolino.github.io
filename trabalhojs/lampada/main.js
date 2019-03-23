@@ -5,10 +5,10 @@ window.addEventListener("load", function () {
 
 function Lampada() {
 	var lampada = document.getElementById('lamp');
-	if (lampada.src == "https://lsolino.github.io/trabalhojs/lampada/lampada_on.gif") {
-		lampada.src = "https://lsolino.github.io/trabalhojs/lampada/lampada_off.gif";
+	if (lampada.src.match("lampada_on.gif")) {
+		lampada.src = "lampada_off.gif";
 	} else {
-		lampada.src = "https://lsolino.github.io/trabalhojs/lampada/lampada_on.gif";
+		lampada.src = "lampada_on.gif";
 	}
 }
 
